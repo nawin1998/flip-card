@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: aquamarine;
+}
+.card{
+    background-color: black;
+    height: 500px;
+    width: 400px;
+    top: 100px;
+    left: 35%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: cadetblue;
+    border-radius: 15px;
+}
+img{
+    height: 60%;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 25%;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    line-height: 2;
+}
+h2{
+    text-align: center;
+    line-height: 2;
+}
+h3{
+    text-align: center;
+    line-height: 2;
+}
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: burlywood;
+    color: white;
+    border-radius: 15px;
+}
+p{
+    font-size: xx-large;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+button{
+    padding: 10px;
+    font-size: x-large;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 32%;
+}
+button:hover{
+    background-color: rgb(206, 246, 4);
+}
